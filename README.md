@@ -4,7 +4,7 @@ GBCD-Binary is the first annotated building change detection dataset constructed
 
 ![Dataset sample](https://github.com/MuhamedNasralla/GBCD-Binary/blob/main/Visualization/dataset.jpg)
 *<!-- INSERT: visualize_sample.py output — Before / After (with red change contours) / Binary mask -->*
-
+ GBCD-Binary Dataset and Model Weights : https://drive.google.com/drive/folders/1NH7K2ooQqg5t7Up5bLcpA1CSnYr6mv8A?usp=sharing
 ## Dataset Overview
 
 | Property | Value |
