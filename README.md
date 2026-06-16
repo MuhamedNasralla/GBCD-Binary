@@ -2,7 +2,7 @@
 
 GBCD-Binary is the first annotated building change detection dataset constructed specifically for Berlin, Germany. It provides 1,769 bi-temporal orthophoto tile pairs covering all twelve administrative districts of the city, captured at 0.2 metres per pixel resolution from 2022 and 2025 Digital Color Orthophotos (DOP). The dataset was developed to address the underrepresentation of German and broader European urban environments in existing building change detection benchmarks, which remain heavily concentrated in East Asian and limited globally distributed contexts.
 
-![Dataset sample](dataset.jpg)
+![Dataset sample](https://github.com/MuhamedNasralla/GBCD-Binary/blob/main/Visualization/dataset.jpg)
 *<!-- INSERT: visualize_sample.py output — Before / After (with red change contours) / Binary mask -->*
 
 ## Dataset Overview
