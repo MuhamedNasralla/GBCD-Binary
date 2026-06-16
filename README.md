@@ -90,7 +90,7 @@ Orthophotos were sourced from the [Berlin Open Data](https://daten.berlin.de/) p
 
 ## License
 
-Specify your chosen license here (e.g. CC BY 4.0, MIT, etc.).
+This dataset is released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE). Source orthophotos are provided by Berlin Open Data under the [Datenlizenz Deutschland – Zero – Version 2.0](https://www.govdata.de/dl-de/zero-2-0).
 
 ## Acknowledgements
 
