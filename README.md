@@ -57,15 +57,15 @@ Building changes were identified using a hybrid annotation workflow combining AI
 
 Annotated categories include newly constructed buildings, demolished structures, and significant structural modifications visible between the two temporal acquisitions. Polygon masks were rasterised using [Rasterio](https://rasterio.readthedocs.io/) and [GeoPandas](https://geopandas.org/), with coordinate reference systems matched explicitly between imagery and labels to prevent spatial misalignment during tiling.
 
-## Model Performance on GBCD-Binary
+## Model Performance on LEVIR-CD (Held-Out Evaluation)
 
-GBCD-Binary was used to fine-tune and evaluate three building change detection model configurations, all based on the [HybridSiam-CD](https://github.com/) architecture combining a frozen DINOv3 ViT-L encoder with a Siamese ResNet34 spatial branch.
+To assess generalisation beyond the training domains, all three model configurations were evaluated on the original LEVIR-CD test set (128 image pairs, Texas, USA) — a benchmark not used in any stage of training, validation, or hyperparameter selection.
 
 | Model | IoU | F1 | Precision | Recall |
 |---|---|---|---|---|
-| HybridSiam-CD (zero-shot, no GBCD training) | 50.66% | 67.25% | 78.69% | 58.71% |
-| HybridSiam-CD+ (fine-tuned on GBCD only) | 61.30% | 76.01% | 70.12% | 82.97% |
-| HybridSiam-CD+ (trained on GBCD + 3 other datasets) | 66.06% | 79.56% | 75.54% | 84.04% |
+| HybridSiam-CD (zero-shot, no GBCD training) | 4.97% | 9.47% | 79.63% | 5.04% |
+| HybridSiam-CD+ (fine-tuned on GBCD only) | 11.87% | 21.23% | 24.91% | 18.49% |
+| HybridSiam-CD+ (trained on GBCD + 3 other datasets) | 56.97% | 72.59% | 67.41% | 78.62% |
 
 ![Model predictions comparison](images/model_predictions_comparison.png)
 *<!-- INSERT: visualize_zeroshot.py / visualize_berlin.py / visualize_combined.py outputs — side-by-side Before/After/Ground Truth/Prediction grids for each model -->*
