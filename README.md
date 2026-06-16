@@ -26,7 +26,7 @@ GBCD-Binary is the first annotated building change detection dataset constructed
 
 ## Exploratory Data Analysis
 
-![EDA charts](images/eda_charts.png)
+![EDA charts](https://github.com/MuhamedNasralla/GBCD-Binary/blob/main/Visualization/GBCD-Binary%20EDA.png)
 *<!-- INSERT: gbcd_eda_charts.py output — pixel-level class distribution + tile distribution per split -->*
 
 The dataset reflects a realistic class imbalance: building construction and demolition events are spatially sparse relative to Berlin's total built-up area over the three-year observation window, with changed pixels constituting only 5.64% of the total labelled area.
@@ -67,7 +67,7 @@ To assess generalisation beyond the training domains, all three model configurat
 | HybridSiam-CD+ (fine-tuned on GBCD only) | 11.87% | 21.23% | 24.91% | 18.49% |
 | HybridSiam-CD+ (trained on GBCD + 3 other datasets) | 56.97% | 72.59% | 67.41% | 78.62% |
 
-![Model predictions comparison](images/model_predictions_comparison.png)
+![Model predictions comparison](https://github.com/MuhamedNasralla/GBCD-Binary/blob/main/Visualization/LEVIR-CD%20Visualization.png)
 *<!-- INSERT: visualize_zeroshot.py / visualize_berlin.py / visualize_combined.py outputs — side-by-side Before/After/Ground Truth/Prediction grids for each model -->*
 
 ## Citation
